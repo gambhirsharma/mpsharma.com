@@ -15,6 +15,8 @@ import Contact from "@/components/Components/Contact"
 import CustomMap from "@/components/Components/Map"
 import  Footer  from "@/components/footer"
 import AchievementCarousel from "@/components/Components/Achievement"
+import InsuranceAchievementSection from "@/components/Components/Insurace-Achivements"
+import Testimonials from "@/components/Components/Testimony"
 
 export default function Component() {
   return (
@@ -51,79 +53,41 @@ export default function Component() {
       <section className="w-full bg-slate-100">
         <Stats />
       </section>
-      <section className="container w-full py-12- md:py-20- lg:py-16- lg:px-0 flex flex-col lg:flex-row">
-        <Image src="/img/pp.png" height={800} width={200} className="h-auto w-[1500px] relative left-0" alt="" />
-        <div className="flex items-center justify-center flex-col w-[120%]  px-10 md:py-14 lg:py-20">
-          <h1 className="my-3 text-blue-primary text-3xl">Note from M.P Sharma</h1>
+      <section className=" w-full flex flex-col lg:flex-row">
+        
+        <Image src="/img/pp.png" height={800} width={200} className="h-auto md:w-[1000px] relative w-screen left-0" alt="" />
+        <div className=" py-12- md:py-20- lg:py-16- lg:px-0 container flex items-center justify-center">
+        <div className="flex items-center justify-center flex-col w-full  md:px-10 md:py-14 lg:py-20">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">Note from MP Sharma</h2>
           <p>Treat the iframe as any other element utilizing media queries with tailwind. You can do this applying w-full and h-full with the Tailwind plugins mentioned before as the parent div or you can manually do it as below:</p>
           <p>Treat the iframe as any other element utilizing media queries with tailwind. You can do this applying w-full and h-full with the Tailwind plugins mentioned before as the parent div or you can manually do it as below:</p>
           <p>Treat the iframe as any other element utilizing media queries with tailwind. You can do this applying w-full and h-full with the Tailwind plugins mentioned before as the parent div or you can manually do it as below:</p>
+        </div>
         </div>
       </section>
       <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
-        <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
-          <div className="space-y-3">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">What my clients say</h2>
-            <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Trusted by the best teams in the world. We help teams of all sizes.
-            </p>
-          </div>
-          <div className="mx-auto w-full max-w-[400px]">
-            <div className="grid w-full grid-rows-3 items-stretch justify-center gap-4 sm:grid-rows-1 sm:grid-cols-3 sm:gap-8">
-              <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8">
-                <img
-                  alt="Avatar"
-                  className="rounded-full"
-                  height="150"
-                  src="/placeholder.svg"
-                  style={{
-                    aspectRatio: "150/150",
-                    objectFit: "cover",
-                  }}
-                  width="150"
-                />
-              </div>
-              <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8">
-                <img
-                  alt="Avatar"
-                  className="rounded-full"
-                  height="150"
-                  src="/placeholder.svg"
-                  style={{
-                    aspectRatio: "150/150",
-                    objectFit: "cover",
-                  }}
-                  width="150"
-                />
-              </div>
-              <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8">
-                <img
-                  alt="Avatar"
-                  className="rounded-full"
-                  height="150"
-                  src="/placeholder.svg"
-                  style={{
-                    aspectRatio: "150/150",
-                    objectFit: "cover",
-                  }}
-                  width="150"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+
+        <Testimonials />
       </section>
+      {/*
+---------- start here 
+
       <section className="w-full py-12 md:py-24 lg:py-32 flex items-center justify-center">
 
-        <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
-          <div className="space-y-3">
+        <div className="border-2 border-black container grid items-center justify-center gap-4 px-4 text-center md:px-6">
+          <div className="space-y-3 bg-red-300">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">My Achievements</h2>
             <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Recognized for excellence. Committed to your security.
+              Recognized for excellence. Commieted to your security.
             </p>
           </div>
           <AchievementCarousel />
         </div>
+      </section>
+---------- end here 
+*/}
+      <section>
+        <InsuranceAchievementSection/>
       </section>
       {/*      <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">

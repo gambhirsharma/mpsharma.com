@@ -1,32 +1,14 @@
 'use client'
 
-import { Carousel } from "react-responsive-carousel";
-//import "react-responsive-carousel/lib/styles/carousel.min.css";
-import styles from "@/styles/Responsive.module.css";
-export default function AchievementCarousel() {
+export default async function AchievementCarousel() {
 
-
-const response = [
-  {
-    id: 1,
-    imageUrl: "/images/1.png",
-    title: "Achievement 1",
-    text: "This is the first achievement",
-  },
-  {
-    id: 2,
-    imageUrl: "/images/2.png",
-    title: "Achievement 2",
-    text: "This is the second achievement",
-  }
-]
 
   return (
-    <div className='container w-full flex items-center justify-center'>
-      <Carousel
+    <div className='bg-green-300 container w-full flex items-center justify-center'>
+      {/*
+        <Carousel
         showArrows={true}
-        showIndicators={true}
-        infiniteLoop={true}
+        showIndicators={true} infiniteLoop={true}
         dynamicHeight={false}
       renderIndicator={()=> null}
         className="w-1/2"
@@ -49,7 +31,9 @@ const response = [
           </div>
         ))}
       </Carousel>
+      */}
     </div>
   );
 }
+
 
